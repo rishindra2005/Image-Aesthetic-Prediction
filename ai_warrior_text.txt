@@ -1,0 +1,77 @@
+Image and Video Analysis
+
+By
+Risheendra
+Mahika
+Wisol
+Высоцкий Иван Сергеевич
+
+Why we need it
+i)Harmful content
+ii)Aesthetics
+
+CLIP model
+
+Why Clip
+
+CLIP model is a versatile neural network that
+can assess image and video quality using a
+wide variety of images and natural language
+training.
+
+CLIP Creation
+OpenAI has demonstrated that scaling a simple pre-training task enables the CLIP model
+to achieve competitive zero-shot performance on various image classification datasets. By
+utilizing text paired with images from the internet, CLIP learns to associate visual concepts
+with their names and can be applied to a wide range of visual classification tasks. For
+example, it can determine whether a given image is more likely to be paired with the text
+description "a photo of a dog" or "a photo of a cat" in datasets focused on classifying
+images of dogs vs. cats.
+
+Advantages of clip
+
+1.
+2.
+
+3.
+
+Filtering Images: CLIP can be used to filter a set of
+photos based on quality using a selected threshold.
+CLIP can enhance image moderation by analyzing
+text and image inputs to detect and filter out
+inappropriate content, such as spam, violence, and
+explicit nudity, ensuring a safer digital environment
+Regression Task: CLIP can predict image quality on
+a scale from 0 to 10, aligning with the assignment's
+requirements. The model's ability to consider both
+technical and aesthetic components of images
+makes it well-suited for this task
+
+Examples
+
+Limitations
+
+While CLIP excels at recognizing common objects, it struggles with more abstract or complex
+tasks such as counting objects or predicting proximity in images. It also faces difﬁculties in
+ﬁne-grained classiﬁcation tasks, such as distinguishing between car models or ﬂower species.
+Moreover, CLIP exhibits poor generalization to images outside its pre-training dataset. For
+example, its performance on handwritten digits from the MNIST dataset falls short of human
+accuracy. Additionally, CLIP's zero-shot classiﬁers can be sensitive to wording and may require
+trial and error for optimal performance.
+
+Broader impacts
+
+CLIP empowers users to create their own classiﬁers, eliminating the need for task-speciﬁc training data.
+However, the design of these classes can strongly inﬂuence both model performance and biases. For
+example, when including terms like "criminal" or "animal" with Fairface race labels, CLIP tends to classify
+images of people aged 0-20 into the egregious category approximately 32.3% of the time. Interestingly,
+when adding the class "child" to the options, this behavior drops to around 8.7%.
+
+Furthermore, CLIP's lack of reliance on task-speciﬁc training data enables it to handle niche tasks more
+easily. However, this also raises concerns regarding privacy and surveillance risks. For instance, CLIP
+achieves a top-1 accuracy of 59.2% for "in the wild" celebrity identiﬁcation with 100 candidate choices,
+but this performance is not competitive compared to existing production-level models. OpenAI's paper
+delves deeper into the challenges posed by CLIP and highlights the importance of further research on
+understanding its capabilities, limitations, and biases.
+
+
